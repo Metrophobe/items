@@ -1,0 +1,24 @@
+<p>this is the content for the show page</p>
+
+<p>showing some json items ...</p>
+
+<div class="items">
+  <ul>
+    <% items.forEach((item)=>{ %>
+    <li>
+      <span class="left"><%= item.id %></span>
+      <strong><%=item.prod %></strong>
+      <span class="right" id="<%=item.id%>">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </span>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+
+<% if(typeof count !== 'undefined'){ if(count > 0){ %>
+<div class="toast"><%= count %> row affected</div>
+<% }} %>
+
+<script src="scripts/show.js"></script>

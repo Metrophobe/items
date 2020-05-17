@@ -1,0 +1,11 @@
+<h2>Delete</h2>
+<form action="delete" method="POST">
+  <input name="remove" type="hidden" value="<%=remove %>" />
+  <input name="id" type="hidden" value="<%=data.id %>" />
+  <label for="fid">Id </label>
+  <input name="fid" type="text" disabled value="<%=data.id %>" />
+  <label for="product">Product </label>
+  <input name="product" type="text" disabled value="<%=data.prod %>" />
+  <button type="submit">Delete</button>
+  <button>Cancel</button>
+</form>

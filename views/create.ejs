@@ -1,0 +1,11 @@
+<h2>Please enter item details</h2>
+<form action="create" method="POST">
+  <label for="product">Product (required)</label>
+  <input name="prod" type="text" placeholder="product" required />
+  <button type="submit">Enter</button>
+  <button type="reset">Clear</button>
+</form>
+
+<% if(typeof count !== 'undefined'){ if(count > 0){ %>
+<div class="toast"><%= count %> row affected</div>
+<% }} %>

@@ -1,0 +1,137 @@
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0%;
+  }
+  40%,
+  70% {
+    opacity: 100%;
+  }
+}
+
+body {
+  background-color: #09f;
+  font-family: "Century Gothic";
+  color: white;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+nav ul {
+  padding: 0px;
+  background-color: #000;
+  margin: 0px;
+}
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 5px;
+  margin: 0px;
+}
+
+nav li a:link {
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav li:hover {
+  background-color: #0cf;
+  transition: 0.2s;
+}
+
+nav li a:visited {
+  color: #eee;
+}
+
+.items ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.items li {
+  position: relative;
+  list-style-type: none;
+  background-color: #002;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.items li .left {
+  display: inline-block;
+  padding: 15px;
+  background-color: #c0c;
+  min-width: 3%;
+}
+
+.items li .right {
+  display: inline-block;
+  position: absolute;
+  right: 0%;
+  padding: 15px;
+  min-width: 2%;
+}
+
+.items li .right button {
+  margin-top: -10px;
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+  transition: 0.2s;
+}
+
+.items li .right button.edit:hover {
+  background-color: orange;
+  transition: 0.2s;
+}
+
+.items li .right button.delete:hover {
+  background-color: red;
+  transition: 0.2s;
+}
+
+.items li strong {
+  padding: 15px;
+}
+
+form label {
+  padding: 15px;
+}
+
+form input[type="text"] {
+  display: block;
+  width: 95%;
+  margin: 10px;
+  padding: 5px;
+}
+
+form button {
+  margin: 10px;
+  padding: 5px;
+  background-color: #c0c;
+  color: white;
+  border: 1px solid white;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #f0f;
+  transition: 0.2s;
+}
+
+.toast {
+  position: absolute;
+  right: 10px;
+  padding: 8px;
+  bottom: 10px;
+  border: solid 1px white;
+  background-color: magenta;
+  color: white;
+  opacity: 0;
+  animation: fadeInOut 2s ease-in-out;
+}
